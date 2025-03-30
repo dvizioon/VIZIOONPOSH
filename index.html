@@ -190,12 +190,12 @@
                 </code>
                 
                 <p>Para instalação permanente, copie os arquivos para um diretório em seu PATH:</p>
-                
+                <p>entre dentro do da pasta ./VIZIOONPOSH que acabou de ser clonada.</p>
                 <code>
                     <span class="comment"># Criar diretório em AppData e adicionar ao PATH</span><br>
                     <span class="command">$installDir</span> = <span class="param">"$env:APPDATA\VIZIOONPOSH"</span><br>
                     <span class="command">if (-not (Test-Path $installDir)) { New-Item -ItemType Directory -Path $installDir }</span><br>
-                    <span class="command">Copy-Item</span> <span class="param">.\oh-my-gui.ps1, .\oh-my-gui.cmd $installDir</span><br><br>
+                    <span class="command">Copy-Item</span> <span class="param">.\oh-my-gui.ps1, .\oh-my-gui.ps1 $installDir</span><br><br>
                     
                     <span class="comment"># Adicionar ao PATH (requer reiniciar o terminal após)</span><br>
                     <span class="command">$userPath</span> = <span class="param">[Environment]::GetEnvironmentVariable("Path", "User")</span><br>
