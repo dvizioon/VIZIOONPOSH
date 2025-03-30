@@ -62,11 +62,12 @@ A versão Linux (oh-my-linux) utiliza o utilitário **Dialog** para criar uma in
    ```
 
 3. Para instalação permanente, copie os arquivos para um diretório em seu PATH:
+> Entre na pasta ./VIZIOONPOSH abra o terminal dentro.
    ```powershell
    # Exemplo: Criar diretório em AppData e adicionar ao PATH
    $installDir = "$env:APPDATA\VIZIOONPOSH"
    if (-not (Test-Path $installDir)) { New-Item -ItemType Directory -Path $installDir }
-   Copy-Item .\oh-my-gui.ps1, .\oh-my-gui.cmd $installDir
+   Copy-Item .\oh-my-gui.ps1, .\oh-my-gui.ps1 $installDir
    
    # Adicionar ao PATH (requer reiniciar o terminal após)
    $userPath = [Environment]::GetEnvironmentVariable("Path", "User")
