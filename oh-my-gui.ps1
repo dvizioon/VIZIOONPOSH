@@ -305,7 +305,7 @@ Write-Host "
                     Write-Host
                     Write-Host "Tema: $selectedTheme" -ForegroundColor White
                     Write-Host
-                    Write-Host "------ OPÇÕES DISPONIVEIS ------" -ForegroundColor DarkCyan
+                    Write-Host "------ OPCOES DISPONIVEIS ------" -ForegroundColor DarkCyan
                     Write-Host
                     Write-Host " [V] --> Visualizar (abre novo prompt)" -ForegroundColor Green
                     Write-Host " [S] --> Salvar e aplicar agora" -ForegroundColor Yellow

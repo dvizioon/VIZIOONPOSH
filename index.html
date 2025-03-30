@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIZIOONPOSH - Seletor de Temas Oh My Posh</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="./css/gallery.css" media="all">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./screenshots/avata.jpg" alt="VIZIOONPOSH Logo">
+                <h1>VIZIOONPOSH</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Funcionalidades</a>
+                <a href="#screenshots">Screenshots</a>
+                <a href="#installation">Instalação</a>
+                <a href="#themes">Temas</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="tutorial.html">Como Usar</a>
+                <a href="https://github.com/dvizioon/VIZIOONPOSH" target="_blank">GitHub</a>
+            </div>
+        </nav>
+
+    </header>
+
+
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Seletor de Temas Oh My Posh</h1>
+            <p>Transforme a experiência do seu terminal com a mais completa ferramenta para seleção e visualização de temas do Oh My Posh para Windows e Linux.</p>
+            
+            <div class="badges">
+                <div class="badge primary">
+                    <i class="fa-brands fa-windows"></i>
+                    PowerShell
+                </div>
+                <div class="badge secondary">
+                    <i class="fa-brands fa-linux"></i>
+                    Bash
+                </div>
+                <div class="badge dark">
+                    <i class="fa-solid fa-terminal"></i>
+                    Dialog UI
+                </div>
+                <div class="badge accent">
+                    <i class="fa-solid fa-code"></i>
+                    v0.0.103
+                </div>
+            </div>
+            
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-controls">
+                        <div class="control red"></div>
+                        <div class="control yellow"></div>
+                        <div class="control green"></div>
+                    </div>
+                    <div class="terminal-title">oh-my-linux.sh</div>
+                </div>
+                <div class="terminal-body">
+                    <div id="terminal-text">
+                        $ ./oh-my-linux.sh<br>
+                        <span style="color: #50fa7b;">Oh My Posh Theme Selector v0.0.103</span><br>
+                        <span style="color: #f1fa8c;">Carregando temas...</span><br>
+                        <span style="color: #bd93f9;">249 temas encontrados em ~/.poshthemes</span><br>
+                        <span style="color: #ff79c6;">[>] Selecione uma opção:</span><br>
+                        <span style="color: #8be9fd;">  1. Selecionar um tema</span><br>
+                        <span style="color: #8be9fd;">  2. Listar todos os temas</span><br>
+                        <span style="color: #8be9fd;">  3. Mostrar ajuda</span><br>
+                        <span style="color: #8be9fd;">  4. Sair</span><br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-buttons">
+                <a href="https://github.com/dvizioon/VIZIOONPOSH" class="btn btn-primary">
+                    <i class="fa-brands fa-github"></i>
+                    Ver no GitHub
+                </a>
+                <a href="#installation" class="btn btn-secondary">
+                    <i class="fa-solid fa-download"></i>
+                    Instalar
+                </a>
+                <a href="tutorial.html" class="btn btn-secondary">
+                    <i class="fa-solid fa-book"></i>
+                    Ver Tutorial de Uso
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="features">
+        <h2 class="section-title animate-on-scroll">Funcionalidades</h2>
+        <div class="features">
+            <div class="feature-card animate-on-scroll">
+                <i class="fa-solid fa-palette feature-icon"></i>
+                <h3 class="feature-title">Interface Amigável</h3>
+                <p class="feature-desc">Interface intuitiva com navegação fácil tanto no PowerShell quanto no Dialog.</p>
+            </div>
+            <div class="feature-card animate-on-scroll">
+                <i class="fa-solid fa-magnifying-glass feature-icon"></i>
+                <h3 class="feature-title">Busca Avançada</h3>
+                <p class="feature-desc">Encontre rapidamente temas com filtragem instantânea enquanto digita.</p>
+            </div>
+            <div class="feature-card animate-on-scroll">
+                <i class="fa-solid fa-eye feature-icon"></i>
+                <h3 class="feature-title">Pré-visualização</h3>
+                <p class="feature-desc">Visualize temas antes de aplicá-los, em janelas isoladas ou no terminal atual.</p>
+            </div>
+            <div class="feature-card animate-on-scroll">
+                <i class="fa-solid fa-floppy-disk feature-icon"></i>
+                <h3 class="feature-title">Modificação Automática</h3>
+                <p class="feature-desc">Atualiza seus arquivos de configuração com backup automático para segurança.</p>
+            </div>
+            <div class="feature-card animate-on-scroll">
+                <i class="fa-solid fa-desktop feature-icon"></i>
+                <h3 class="feature-title">Multiplataforma</h3>
+                <p class="feature-desc">Funciona perfeitamente tanto no Windows (PowerShell) quanto no Linux (Bash).</p>
+            </div>
+            <div class="feature-card animate-on-scroll">
+                <i class="fa-solid fa-terminal feature-icon"></i>
+                <h3 class="feature-title">API de Linha de Comando</h3>
+                <p class="feature-desc">Suporte a parâmetros para integração em scripts e automação.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="screenshots" class="screenshots">
+        <h2 class="section-title animate-on-scroll">Screenshots</h2>
+        <div class="screenshot-gallery">
+            <div class="screenshot animate-on-scroll">
+                <img src="./screenshots/02.png" alt="Dialog Menu Principal">
+            </div>
+            <div class="screenshot animate-on-scroll">
+                <img src="./screenshots/03.png" alt="Lista de Temas">
+            </div>
+            <div class="screenshot animate-on-scroll">
+                <img src="./screenshots/04.png" alt="Versão Windows">
+            </div>
+            <div class="screenshot animate-on-scroll">
+                <img src="./screenshots/06.png" alt="Tema Atomic">
+            </div>
+            <div class="screenshot animate-on-scroll">
+                <img src="./screenshots/07.png" alt="Tema Atomic 2">
+            </div>
+            <div class="screenshot animate-on-scroll">
+                <img src="./screenshots/08.png" alt="Tema Paradox">
+            </div>
+            <div class="screenshot animate-on-scroll">
+                <img src="./screenshots/09.png" alt="Tema Paradox 2">
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="screenshots.html" class="btn btn-primary">
+                <i class="fa-solid fa-images"></i>
+                Ver Galeria Completa
+            </a>
+        </div>
+    </section>
+    
+    <section id="installation" class="installation">
+        <h2 class="section-title animate-on-scroll">Instalação</h2>
+        <div class="installation-tabs animate-on-scroll">
+            <div class="tab-header">
+                <button class="tab-btn active" data-tab="windows">Windows</button>
+                <button class="tab-btn" data-tab="linux">Linux</button>
+            </div>
+            
+            <div class="tab-content active" id="windows-tab">
+                <h3>Instalação no Windows</h3>
+                <p>Siga os passos abaixo para instalar o seletor de temas no Windows:</p>
+                
+                <code>
+                    <span class="comment"># Clone o repositório</span><br>
+                    <span class="command">git clone</span> <span class="param">https://github.com/dvizioon/VIZIOONPOSH.git</span><br>
+                    <span class="command">cd</span> <span class="param">VIZIOONPOSH</span><br><br>
+                    
+                    <span class="comment"># Desbloqueie o script</span><br>
+                    <span class="command">Unblock-File</span> <span class="param">.\oh-my-gui.ps1</span><br><br>
+                    
+                    <span class="comment"># Execute o script</span><br>
+                    <span class="command">.\oh-my-gui.ps1</span>
+                </code>
+                
+                <p>Para instalação permanente, copie os arquivos para um diretório em seu PATH:</p>
+                
+                <code>
+                    <span class="comment"># Criar diretório em AppData e adicionar ao PATH</span><br>
+                    <span class="command">$installDir</span> = <span class="param">"$env:APPDATA\VIZIOONPOSH"</span><br>
+                    <span class="command">if (-not (Test-Path $installDir)) { New-Item -ItemType Directory -Path $installDir }</span><br>
+                    <span class="command">Copy-Item</span> <span class="param">.\oh-my-gui.ps1, .\oh-my-gui.cmd $installDir</span><br><br>
+                    
+                    <span class="comment"># Adicionar ao PATH (requer reiniciar o terminal após)</span><br>
+                    <span class="command">$userPath</span> = <span class="param">[Environment]::GetEnvironmentVariable("Path", "User")</span><br>
+                    <span class="command">if ($userPath -notlike "*$installDir*") {</span><br>
+                    <span class="command">    [Environment]::SetEnvironmentVariable("Path", "$userPath;$installDir", "User")</span><br>
+                    <span class="command">}</span>
+                </code>
+            </div>
+            
+            <div class="tab-content" id="linux-tab">
+                <h3>Instalação no Linux</h3>
+                <p>Siga os passos abaixo para instalar o seletor de temas no Linux:</p>
+                
+                <code>
+                    <span class="comment"># Clone o repositório</span><br>
+                    <span class="command">git clone</span> <span class="param">https://github.com/dvizioon/VIZIOONPOSH.git</span><br>
+                    <span class="command">cd</span> <span class="param">VIZIOONPOSH</span><br><br>
+                    
+                    <span class="comment"># Torne o script executável</span><br>
+                    <span class="command">chmod +x</span> <span class="param">oh-my-linux.sh</span><br><br>
+                    
+                    <span class="comment"># Execute o script</span><br>
+                    <span class="command">./oh-my-linux.sh</span>
+                </code>
+                
+                <p>Para instalação global, mova para um diretório no PATH:</p>
+                
+                <code>
+                    <span class="comment"># Opção 1: Instalação para usuário atual</span><br>
+                    <span class="command">mkdir -p</span> <span class="param">~/.local/bin</span><br>
+                    <span class="command">cp</span> <span class="param">oh-my-linux.sh ~/.local/bin/oh-my-linux</span><br><br>
+                    
+                    <span class="comment"># Se ~/.local/bin não estiver no PATH, adicione-o</span><br>
+                    <span class="command">echo</span> <span class="param">'export PATH="$HOME/.local/bin:$PATH"'</span> <span class="command">>></span> <span class="param">~/.bashrc</span><br>
+                    <span class="command">source</span> <span class="param">~/.bashrc</span><br><br>
+                    
+                    <span class="comment"># Opção 2: Instalação para todos os usuários</span><br>
+                    <span class="command">sudo cp</span> <span class="param">oh-my-linux.sh /usr/local/bin/oh-my-linux</span>
+                </code>
+                
+                <div class="alert-note">
+                    <p><strong>Nota:</strong> A versão Linux instalará automaticamente o Dialog se necessário. Em caso de falha, você pode instalar manualmente:</p>
+                    <code><span class="command">sudo apt-get install</span> <span class="param">dialog</span> <span class="comment"># Ubuntu/Debian</span></code>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="themes" class="themes">
+        <h2 class="section-title animate-on-scroll">Temas Populares</h2>
+        <div class="theme-grid">
+            <div class="theme-card animate-on-scroll">
+                <div class="theme-preview theme-preview-1">
+                    [user@host ~]$ ls -la<br>
+                    total 32<br>
+                    drwxr-xr-x 2 user user 4096 Mar 30 10:15 .
+                </div>
+                <div class="theme-info">
+                    <div class="theme-name">Atomic</div>
+                    <div class="theme-author">Oh My Posh</div>
+                </div>
+            </div>
+            <div class="theme-card animate-on-scroll">
+                <div class="theme-preview theme-preview-2">
+                    PS C:\Users\user> Get-Process<br>
+                    ...npm...<br>
+                    ...node...
+                </div>
+                <div class="theme-info">
+                    <div class="theme-name">Paradox</div>
+                    <div class="theme-author">Oh My Posh</div>
+                </div>
+            </div>
+            <div class="theme-card animate-on-scroll">
+                <div class="theme-preview theme-preview-3">
+                    ~/projects $ git status<br>
+                    On branch main<br>
+                    Your branch is up to date
+                </div>
+                <div class="theme-info">
+                    <div class="theme-name">Powerlevel10k</div>
+                    <div class="theme-author">Oh My Posh</div>
+                </div>
+            </div>
+            <div class="theme-card animate-on-scroll">
+                <div class="theme-preview theme-preview-4">
+                    user@server:~$ cd projects<br>
+                    user@server:~/projects$ npm start
+                </div>
+                <div class="theme-info">
+                    <div class="theme-name">Star</div>
+                    <div class="theme-author">Oh My Posh</div>
+                </div>
+            </div>
+            <div class="theme-card animate-on-scroll">
+                <div class="theme-preview theme-preview-5">
+                    ~/code/project main ● $ ls<br>
+                    src/ package.json README.md
+                </div>
+                <div class="theme-info">
+                    <div class="theme-name">Catppuccin</div>
+                    <div class="theme-author">Oh My Posh</div>
+                </div>
+            </div>
+            <div class="theme-card animate-on-scroll">
+                <div class="theme-preview theme-preview-6">
+                    ~ on main [+!?] $ npm run dev<br>
+                    > project@1.0.0 dev
+                </div>
+                <div class="theme-info">
+                    <div class="theme-name">Montys</div>
+                    <div class="theme-author">Oh My Posh</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-links">
+            <a href="#features">Funcionalidades</a>
+            <a href="#screenshots">Screenshots</a>
+            <a href="#installation">Instalação</a>
+            <a href="#themes">Temas</a>
+            <a href="screenshots.html">Galeria</a>
+            <a href="https://github.com/dvizioon/VIZIOONPOSH" target="_blank">GitHub</a>
+        </div>
+        <div class="social-links">
+            <a href="https://github.com/dvizioon" class="social-link" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="#" class="social-link" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="#" class="social-link" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+        </div>
+        <div class="copyright">
+            &copy; 2025 VIZIOONPOSH - Criado por Daniel Estevão Martins Mendes<br>
+            Oh My Posh é criado e mantido por Jan De Dobbeleer.
+        </div>
+    </footer>
+    
+    <div class="theme-toggle">
+        <i class="fa-solid fa-moon"></i>
+    </div>
+    
+    <script>
+        // Animação de digitação para o terminal
+        document.addEventListener('DOMContentLoaded', function() {
+            // Função para mostrar elementos quando são visíveis na tela
+            function revealOnScroll() {
+                const elements = document.querySelectorAll('.animate-on-scroll');
+                const windowHeight = window.innerHeight;
+                
+                elements.forEach(element => {
+                    const elementPosition = element.getBoundingClientRect().top;
+                    if (elementPosition < windowHeight - 100) {
+                        element.classList.add('show');
+                    }
+                });
+            }
+            
+            // Inicializar a animação ao carregar a página
+            revealOnScroll();
+            
+            // Ativar a animação ao rolar a página
+            window.addEventListener('scroll', revealOnScroll);
+            
+            // Troca de tabs na seção de instalação
+            const tabButtons = document.querySelectorAll('.tab-btn');
+            const tabContents = document.querySelectorAll('.tab-content');
+            
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remover classe 'active' de todos os botões e conteúdos
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    tabContents.forEach(content => content.classList.remove('active'));
+                    
+                    // Adicionar classe 'active' ao botão clicado
+                    button.classList.add('active');
+                    
+                    // Ativar o conteúdo correspondente
+                    const tabId = button.getAttribute('data-tab');
+                    document.getElementById(`${tabId}-tab`).classList.add('active');
+                });
+            });
+            
+            // Toggle para tema claro/escuro
+            const themeToggle = document.querySelector('.theme-toggle');
+            themeToggle.addEventListener('click', () => {
+                document.body.classList.toggle('light-theme');
+                const icon = themeToggle.querySelector('i');
+                if (document.body.classList.contains('light-theme')) {
+                    icon.classList.remove('fa-moon');
+                    icon.classList.add('fa-sun');
+                } else {
+                    icon.classList.remove('fa-sun');
+                    icon.classList.add('fa-moon');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIZIOONPOSH - Como Usar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css" media="all">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./screenshots/avata.jpg" alt="VIZIOONPOSH Logo">
+                <h1>VIZIOONPOSH</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Início</a>
+                <a href="index.html#features">Funcionalidades</a>
+                <a href="index.html#installation">Instalação</a>
+                <a href="index.html#themes">Temas</a>
+                <a href="screenshots.html">Galeria</a>
+                <a href="https://github.com/dvizioon/VIZIOONPOSH" target="_blank">GitHub</a>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="page-header">
+        <h1>Guia de Uso do VIZIOONPOSH</h1>
+        <p>Aprenda a utilizar todas as funcionalidades do seletor de temas Oh My Posh de forma simples e eficiente.</p>
+    </section>
+    
+    <section class="tutorial-section">
+        <div class="tutorial-container">
+            <h2 class="tutorial-heading">Primeiros Passos</h2>
+            
+            <img src="./screenshots/apresentaçãoFerramenta.gif" alt="Demonstração da Ferramenta" class="demo-gif">
+            
+            <div class="tutorial-steps">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Instalando o Oh My Posh</h3>
+                    <div class="step-content">
+                        <p>Antes de começar a usar o VIZIOONPOSH, você precisa ter o Oh My Posh instalado no seu sistema. Caso ainda não tenha:</p>
+                        
+                        <div class="command-example">
+                            <span style="color: #6272a4;"># No Windows (PowerShell)</span><br>
+                            winget install JanDeDobbeleer.OhMyPosh<br><br>
+                            
+                            <span style="color: #6272a4;"># No Linux (bash)</span><br>
+                            curl -s https://ohmyposh.dev/install.sh | bash -s
+                        </div>
+                        
+                        <div class="tutorial-note">
+                            <p><strong>Nota:</strong> O Oh My Posh requer uma fonte Nerd Font para exibir corretamente todos os ícones. Você pode instalar uma utilizando:</p>
+                            <div class="command-example">oh-my-posh font install</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Instalando o VIZIOONPOSH</h3>
+                    <div class="step-content">
+                        <p>Para instalar o VIZIOONPOSH, siga os passos abaixo para sua plataforma:</p>
+                        
+                        <h4>Windows:</h4>
+                        <div class="command-example">
+                            <span style="color: #6272a4;"># Clone o repositório</span><br>
+                            git clone https://github.com/dvizioon/VIZIOONPOSH.git<br>
+                            cd VIZIOONPOSH<br><br>
+                            
+                            <span style="color: #6272a4;"># Desbloqueie o script</span><br>
+                            Unblock-File .\oh-my-gui.ps1<br><br>
+                            
+                            <span style="color: #6272a4;"># Execute o script</span><br>
+                            .\oh-my-gui.ps1
+                        </div>
+                        
+                        <h4>Linux:</h4>
+                        <div class="command-example">
+                            <span style="color: #6272a4;"># Clone o repositório</span><br>
+                            git clone https://github.com/dvizioon/VIZIOONPOSH.git<br>
+                            cd VIZIOONPOSH<br><br>
+                            
+                            <span style="color: #6272a4;"># Torne o script executável</span><br>
+                            chmod +x oh-my-linux.sh<br><br>
+                            
+                            <span style="color: #6272a4;"># Execute o script</span><br>
+                            ./oh-my-linux.sh
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Navegando pela Interface</h3>
+                    <div class="step-content">
+                        <h4>Interface Linux (Dialog):</h4>
+                        <p>A versão Linux usa o Dialog para uma navegação simplificada:</p>
+                        <ul>
+                            <li>Use <strong>↑</strong> / <strong>↓</strong> para navegar entre as opções</li>
+                            <li>Pressione <strong>Enter</strong> para selecionar a opção destacada</li>
+                            <li>Pressione <strong>Tab</strong> para alternar entre os controles</li>
+                            <li>Pressione <strong>ESC</strong> para voltar ao menu anterior ou sair</li>
+                            <li>Use <strong>PgUp</strong> / <strong>PgDn</strong> para navegar entre páginas na lista de temas</li>
+                        </ul>
+                        
+                        <div class="step-image">
+                            <img src="./screenshots/02.png" alt="Menu Principal do Dialog">
+                        </div>
+                        
+                        <h4>Interface Windows (TUI):</h4>
+                        <p>A versão Windows usa uma interface nativa do PowerShell:</p>
+                        <ul>
+                            <li>Use <strong>↑</strong> / <strong>↓</strong> para navegação vertical item a item</li>
+                            <li>Use <strong>PgUp</strong> / <strong>PgDn</strong> para navegação por página (15 itens)</li>
+                            <li>Use <strong>Home</strong> / <strong>End</strong> para ir para o primeiro/último tema</li>
+                            <li>Pressione <strong>Enter</strong> para selecionar tema atual</li>
+                            <li>Pressione <strong>;</strong> para ativar modo de pesquisa</li>
+                            <li>Pressione <strong>ESC</strong> para voltar ao menu anterior ou sair</li>
+                        </ul>
+                        
+                        <div class="step-image">
+                            <img src="./screenshots/04.png" alt="Interface Windows">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <h3 class="step-title">Visualizando e Aplicando Temas</h3>
+                    <div class="step-content">
+                        <p>Após selecionar um tema, você terá as seguintes opções:</p>
+                        
+                        <ol>
+                            <li><strong>Visualizar</strong>: Abre um novo terminal com o tema carregado temporariamente</li>
+                            <li><strong>Visualizar no terminal atual</strong>: Aplica o tema temporariamente na sessão atual (apenas na versão Linux)</li>
+                            <li><strong>Salvar</strong>: Salva o tema no seu perfil e o aplica permanentemente</li>
+                            <li><strong>Cancelar/Voltar</strong>: Retorna ao menu de temas sem aplicar alterações</li>
+                        </ol>
+                        
+                        <div class="tutorial-tip">
+                            <p><strong>Dica:</strong> Teste um tema utilizando a opção "Visualizar" antes de aplicá-lo permanentemente. Isso permitirá ver como ele se comporta em diferentes situações.</p>
+                        </div>
+                        
+                        <h4>Exemplos de Temas:</h4>
+                        <div class="step-image">
+                            <img src="./screenshots/06.png" alt="Tema Atomic">
+                        </div>
+                        <div class="step-image">
+                            <img src="./screenshots/08.png" alt="Tema Paradox">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step-item">
+                    <div class="step-number">5</div>
+                    <h3 class="step-title">Usando Parâmetros de Linha de Comando</h3>
+                    <div class="step-content">
+                        <p>O VIZIOONPOSH também oferece suporte a comandos diretos via linha de comando para maior eficiência:</p>
+                        
+                        <div class="command-example">
+                            <span style="color: #6272a4;"># Listar todos os temas disponíveis</span><br>
+                            ./oh-my-linux.sh --list<br>
+                            # ou no Windows<br>
+                            ./oh-my-gui.ps1 --list<br><br>
+                            
+                            <span style="color: #6272a4;"># Aplicar um tema específico diretamente</span><br>
+                            ./oh-my-linux.sh --theme=atomic<br>
+                            # ou no Windows<br>
+                            ./oh-my-gui.ps1 --theme=paradox<br><br>
+                            
+                            <span style="color: #6272a4;"># Exibir ajuda</span><br>
+                            ./oh-my-linux.sh --help<br>
+                            # ou no Windows<br>
+                            ./oh-my-gui.ps1 --help
+                        </div>
+                        
+                        <div class="tutorial-tip">
+                            <p><strong>Automatização:</strong> Você pode criar scripts personalizados para mudar o tema automaticamente com base no dia da semana ou hostname:</p>
+                            <div class="command-example">
+                                <span style="color: #6272a4;"># Exemplo para Windows:</span><br>
+                                $day = (Get-Date).DayOfWeek<br>
+                                switch ($day) {<br>
+                                &nbsp;&nbsp;"Monday"    { oh-my-gui --theme=atomic }<br>
+                                &nbsp;&nbsp;"Friday"    { oh-my-gui --theme=star }<br>
+                                &nbsp;&nbsp;default     { oh-my-gui --theme=paradox }<br>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step-item">
+                    <div class="step-number">6</div>
+                    <h3 class="step-title">Solução de Problemas Comuns</h3>
+                    <div class="step-content">
+                        <h4>Problemas com Fontes:</h4>
+                        <p>Se você vir símbolos estranhos ou quadrados, instale uma fonte Nerd Font e configure seu terminal para usá-la:</p>
+                        <div class="command-example">oh-my-posh font install</div>
+                        
+                        <h4>Problemas no WSL:</h4>
+                        <p>Se estiver usando o WSL e encontrar problemas, tente:</p>
+                        <div class="command-example">
+                            <span style="color: #6272a4;"># Definir a variável TERM</span><br>
+                            export TERM=xterm-256color<br>
+                            ./oh-my-linux.sh
+                        </div>
+                        
+                        <h4>Problemas com Permissões:</h4>
+                        <div class="command-example">
+                            <span style="color: #6272a4;"># Verificar permissões do arquivo .bashrc</span><br>
+                            ls -la ~/.bashrc<br>
+                            <span style="color: #6272a4;"># Ajustar permissões se necessário</span><br>
+                            chmod u+w ~/.bashrc
+                        </div>
+                        
+                        <div class="tutorial-note">
+                            <p><strong>Para diagnóstico avançado:</strong> No repositório do GitHub, você encontrará um script de diagnóstico completo que pode ajudar a identificar e resolver problemas específicos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="back-to-home">
+            <a href="index.html" class="btn btn-primary">
+                <i class="fa-solid fa-home"></i>
+                Voltar para Página Inicial
+            </a>
+            <a href="galeria.html" class="btn btn-secondary" style="margin-left: 1rem;">
+                <i class="fa-solid fa-images"></i>
+                Ver Galeria
+            </a>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Início</a>
+            <a href="index.html#features">Funcionalidades</a>
+            <a href="index.html#screenshots">Screenshots</a>
+            <a href="index.html#installation">Instalação</a>
+            <a href="index.html#themes">Temas</a>
+        </div>
+        <div class="social-links">
+            <a href="https://github.com/dvizioon" class="social-link" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="#" class="social-link" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="#" class="social-link" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+        </div>
+        <div class="copyright">
+            &copy; 2025 VIZIOONPOSH - Criado por Daniel Estevão Martins Mendes<br>
+            Oh My Posh é criado e mantido por Jan De Dobbeleer.
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animação suave para os passos do tutorial
+            const stepItems = document.querySelectorAll('.step-item');
+            
+            function animateSteps() {
+                const windowHeight = window.innerHeight;
+                
+                stepItems.forEach((item, index) => {
+                    const itemPosition = item.getBoundingClientRect().top;
+                    
+                    if (itemPosition < windowHeight - 100) {
+                        // Adicionar um pequeno atraso crescente para cada item
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'translateY(0)';
+                        }, index * 150);
+                    }
+                });
+            }
+            
+            // Configurar os itens inicialmente
+            stepItems.forEach(item => {
+                item.style.opacity = '0';
+                item.style.transform = 'translateY(30px)';
+                item.style.transition = 'all 0.6s ease-out';
+            });
+            
+            // Executar a animação no carregamento
+            setTimeout(animateSteps, 300);
+            
+            // Executar novamente ao rolar a página
+            window.addEventListener('scroll', animateSteps);
+        });
+    </script>
+</body>
+</html>
